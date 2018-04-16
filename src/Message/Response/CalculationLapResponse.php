@@ -1,16 +1,16 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Response;
+namespace Boxberry\C2C\Message\Response;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\CalculationLapRequest;
-use Dumkaaa\Boxberry\Api\Common\Exception\RuntimeException;
+use Boxberry\C2C\Message\Request\CalculationLapRequest;
+use Boxberry\Common\Exception\RuntimeException;
 
 /**
  * Class CalculationLapResponse
  *
  * @see     CalculationLapRequest
- * @package Dumkaaa\Boxberry\Api\C2C\Message\Response
+ * @package Boxberry\C2C\Message\Response
  */
 class CalculationLapResponse extends AbstractResponse
 {
@@ -18,7 +18,7 @@ class CalculationLapResponse extends AbstractResponse
      * @inheritdoc
      *
      * @return bool
-     * @throws \Dumkaaa\Boxberry\Api\Common\Exception\RuntimeException
+     * @throws \Boxberry\Common\Exception\RuntimeException
      * @throws RuntimeException
      */
     public function getCollection($collectionItem = '')

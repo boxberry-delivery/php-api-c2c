@@ -1,15 +1,15 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Model;
+namespace Boxberry\C2C\Model;
 
-use Dumkaaa\Boxberry\Api\Common\Model\AbstractModel;
-use Dumkaaa\Boxberry\Api\Common\Model\CreateFromAttributesTrait;
+use Boxberry\Common\Model\AbstractModel;
+use Boxberry\Common\Model\CreateFromAttributesTrait;
 
 /**
  * Тип вложения
  *
- * @package Dumkaaa\Boxberry\Api\Common\Models
+ * @package Boxberry\Common\Models
  */
 class AttachmentType extends AbstractModel
 {

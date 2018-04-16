@@ -1,16 +1,16 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Response;
+namespace Boxberry\C2C\Message\Response;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListAttachmentTypesRequest;
-use Dumkaaa\Boxberry\Api\C2C\Model\AttachmentType;
+use Boxberry\C2C\Message\Request\ListAttachmentTypesRequest;
+use Boxberry\C2C\Model\AttachmentType;
 
 /**
  * Class ListAttachmentTypesResponse
  *
  * @see     ListAttachmentTypesRequest
- * @package Dumkaaa\Boxberry\Api\C2C\Message\Response
+ * @package Boxberry\C2C\Message\Response
  */
 class ListAttachmentTypesResponse extends AbstractResponse
 {

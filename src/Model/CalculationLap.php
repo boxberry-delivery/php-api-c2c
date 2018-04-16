@@ -1,17 +1,17 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Model;
+namespace Boxberry\C2C\Model;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\CalculationLapRequest;
-use Dumkaaa\Boxberry\Api\Common\Exception\RuntimeException;
-use Dumkaaa\Boxberry\Api\Common\Model\AbstractModel;
+use Boxberry\C2C\Message\Request\CalculationLapRequest;
+use Boxberry\Common\Exception\RuntimeException;
+use Boxberry\Common\Model\AbstractModel;
 
 /**
  * Рассчет стоимости доставки ПиП.
  *
  * @see     CalculationLapRequest
- * @package Dumkaaa\Boxberry\Api\C2C\Model
+ * @package Boxberry\C2C\Model
  */
 class CalculationLap extends AbstractModel
 {
@@ -38,7 +38,7 @@ class CalculationLap extends AbstractModel
      * @inheritdoc
      *
      * @return void
-     * @throws \Dumkaaa\Boxberry\Api\Common\Exception\RuntimeException
+     * @throws \Boxberry\Common\Exception\RuntimeException
      */
     public static function createFromAttributes(array $attributes)
     {

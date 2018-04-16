@@ -1,14 +1,14 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Request;
+namespace Boxberry\C2C\Message\Request;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Response\NewOrderResponse;
-use Dumkaaa\Boxberry\Api\C2C\Model\Package;
-use Dumkaaa\Boxberry\Api\C2C\Model\Receiver;
-use Dumkaaa\Boxberry\Api\C2C\Model\SafeDeal;
-use Dumkaaa\Boxberry\Api\C2C\Model\Sender;
-use Dumkaaa\Boxberry\Api\Common\Helper;
+use Boxberry\C2C\Message\Response\NewOrderResponse;
+use Boxberry\C2C\Model\Package;
+use Boxberry\C2C\Model\Receiver;
+use Boxberry\C2C\Model\SafeDeal;
+use Boxberry\C2C\Model\Sender;
+use Boxberry\Common\Helper;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -16,7 +16,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @method NewOrderResponse send()
  * @see     NewOrderResponse
- * @package Dumkaaa\Boxberry\Api\C2C\Message\Request
+ * @package Boxberry\C2C\Message\Request
  */
 class NewOrderRequest extends AbstractRequest
 {

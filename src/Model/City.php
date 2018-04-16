@@ -1,16 +1,16 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Model;
+namespace Boxberry\C2C\Model;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListCitiesRequest;
-use Dumkaaa\Boxberry\Api\Common\Model\AbstractModel;
-use Dumkaaa\Boxberry\Api\Common\Model\CreateFromAttributesTrait;
+use Boxberry\C2C\Message\Request\ListCitiesRequest;
+use Boxberry\Common\Model\AbstractModel;
+use Boxberry\Common\Model\CreateFromAttributesTrait;
 
 /**
  * Город
  *
- * @package Dumkaaa\Boxberry\Api\Common\Models
+ * @package Boxberry\Common\Models
  */
 class City extends AbstractModel
 {

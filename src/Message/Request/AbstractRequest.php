@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Request;
+namespace Boxberry\C2C\Message\Request;
 
-use Dumkaaa\Boxberry\Api\Common\Message\Request\AbstractRequest as BaseAbstractRequest;
+use Boxberry\Common\Message\Request\AbstractRequest as BaseAbstractRequest;
 
 abstract class AbstractRequest extends BaseAbstractRequest
 {

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Model;
+namespace Boxberry\C2C\Model;
 
-use Dumkaaa\Boxberry\Api\Common\Exception\RuntimeException;
-use Dumkaaa\Boxberry\Api\Common\Model\AbstractModel;
+use Boxberry\Common\Exception\RuntimeException;
+use Boxberry\Common\Model\AbstractModel;
 
 class Status extends AbstractModel
 {
@@ -27,7 +27,7 @@ class Status extends AbstractModel
      * @inheritdoc
      *
      * @return void
-     * @throws \Dumkaaa\Boxberry\Api\Common\Exception\RuntimeException
+     * @throws \Boxberry\Common\Exception\RuntimeException
      * @throws RuntimeException
      */
     public static function createFromAttributes(array $attributes)

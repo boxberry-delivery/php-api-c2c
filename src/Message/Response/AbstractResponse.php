@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Response;
+namespace Boxberry\C2C\Message\Response;
 
-use Dumkaaa\Boxberry\Api\Common\Message\Response\AbstractResponse as BaseAbstractResponse;
+use Boxberry\Common\Message\Response\AbstractResponse as BaseAbstractResponse;
 
 abstract class AbstractResponse extends BaseAbstractResponse
 {

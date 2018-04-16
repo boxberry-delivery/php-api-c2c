@@ -1,16 +1,16 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Request;
+namespace Boxberry\C2C\Message\Request;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Response\ListServicesResponse;
+use Boxberry\C2C\Message\Response\ListServicesResponse;
 
 /**
  * Метод для получения списка дополнительных услуг.
  *
  * @method ListServicesResponse send()
  * @see     ListServicesResponse
- * @package Dumkaaa\Boxberry\Api\C2C\Message\Request
+ * @package Boxberry\C2C\Message\Request
  */
 class ListServicesRequest extends AbstractRequest
 {

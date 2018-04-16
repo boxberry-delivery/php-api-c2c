@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Request;
+namespace Boxberry\C2C\Message\Request;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Response\ListStatusesResponse;
+use Boxberry\C2C\Message\Response\ListStatusesResponse;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @method ListStatusesResponse send()
  * @see     ListStatusesResponse
- * @package Dumkaaa\Boxberry\Api\C2C\Message\Request
+ * @package Boxberry\C2C\Message\Request
  */
 class ListStatusesRequest extends AbstractRequest
 {

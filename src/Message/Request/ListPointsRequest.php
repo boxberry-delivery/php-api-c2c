@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Request;
+namespace Boxberry\C2C\Message\Request;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Response\ListPointsResponse;
+use Boxberry\C2C\Message\Response\ListPointsResponse;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @method ListPointsResponse send()
  * @see     ListPointsResponse
- * @package Dumkaaa\Boxberry\Api\C2C\Message\Request
+ * @package Boxberry\C2C\Message\Request
  */
 class ListPointsRequest extends AbstractRequest
 {

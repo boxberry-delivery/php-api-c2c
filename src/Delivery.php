@@ -1,19 +1,19 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C;
+namespace Boxberry\C2C;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\CalculationLapRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\DeleteParcelsRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListAttachmentTypesRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListCitiesRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListPackagesRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListPointsRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListServicesRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListStatusesRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListZipsRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\NewOrderRequest;
-use Dumkaaa\Boxberry\Api\Common\AbstractDelivery;
+use Boxberry\C2C\Message\Request\CalculationLapRequest;
+use Boxberry\C2C\Message\Request\DeleteParcelsRequest;
+use Boxberry\C2C\Message\Request\ListAttachmentTypesRequest;
+use Boxberry\C2C\Message\Request\ListCitiesRequest;
+use Boxberry\C2C\Message\Request\ListPackagesRequest;
+use Boxberry\C2C\Message\Request\ListPointsRequest;
+use Boxberry\C2C\Message\Request\ListServicesRequest;
+use Boxberry\C2C\Message\Request\ListStatusesRequest;
+use Boxberry\C2C\Message\Request\ListZipsRequest;
+use Boxberry\C2C\Message\Request\NewOrderRequest;
+use Boxberry\Common\AbstractDelivery;
 
 class Delivery extends AbstractDelivery
 {

@@ -1,14 +1,17 @@
 {
-  "name": "dumkaaa/boxberry-api-c2c",
+  "name": "boxberry-delivery/php-api-c2c",
   "type": "library",
-  "description": "Реализация Boxberry API для работы с сервисами ПиП(письма и посылки) и ЛК (в т.ч. для частных лиц)",
+  "description": "Реализация Boxberry API для работы с сервисами ЛК и ПиП (письма и посылки)",
   "keywords": [
     "boxberry",
-    "api",
+    "boxberry-api",
+    "boxberry-delivery",
+    "delivery-api",
     "delivery",
+    "api",
     "c2c"
   ],
-  "homepage": "https://github.com/Dumkaaa/boxberry-api-c2c",
+  "homepage": "https://github.com/boxberry-delivery/php-api-c2c",
   "license": "MIT",
   "authors": [
     {
@@ -17,15 +20,15 @@
     },
     {
       "name": "Github Contributors",
-      "homepage": "https://github.com/Dumkaaa/boxberry-api-c2c/contributors"
+      "homepage": "https://github.com/boxberry-delivery/php-api-c2c/contributors"
     }
   ],
   "require": {
-    "dumkaaa/boxberry-api-common": "^1.0"
+    "boxberry-delivery/php-api-common": "^1.0"
   },
   "autoload": {
     "psr-4": {
-      "Dumkaaa\\Boxberry\\Api\\C2C\\": "src"
+      "Boxberry\\C2C\\": "src"
     }
   }
 }

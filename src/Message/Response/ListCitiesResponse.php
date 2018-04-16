@@ -1,16 +1,16 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Message\Response;
+namespace Boxberry\C2C\Message\Response;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListCitiesRequest;
-use Dumkaaa\Boxberry\Api\C2C\Model\City;
+use Boxberry\C2C\Message\Request\ListCitiesRequest;
+use Boxberry\C2C\Model\City;
 
 /**
  * Class ListCitiesResponse
  *
  * @see     ListCitiesRequest
- * @package Dumkaaa\Boxberry\Api\C2C\Message\Response
+ * @package Boxberry\C2C\Message\Response
  */
 class ListCitiesResponse extends AbstractResponse
 {

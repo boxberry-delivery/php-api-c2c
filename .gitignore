@@ -1,5 +1,8 @@
+docs/build
 vendor
 composer.lock
 composer.phar
+phpDocumentor.phar
 phpunit.xml
+phpdoc.xml
 *.idea

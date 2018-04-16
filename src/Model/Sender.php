@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Dumkaaa\Boxberry\Api\C2C\Model;
+namespace Boxberry\C2C\Model;
 
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListCitiesRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListPointsRequest;
-use Dumkaaa\Boxberry\Api\C2C\Message\Request\ListZipsRequest;
-use Dumkaaa\Boxberry\Api\Common\Model\AbstractModel;
-use Dumkaaa\Boxberry\Api\Common\Model\CreateFromAttributesTrait;
+use Boxberry\C2C\Message\Request\ListCitiesRequest;
+use Boxberry\C2C\Message\Request\ListPointsRequest;
+use Boxberry\C2C\Message\Request\ListZipsRequest;
+use Boxberry\Common\Model\AbstractModel;
+use Boxberry\Common\Model\CreateFromAttributesTrait;
 
 class Sender extends AbstractModel
 {
