@@ -17,11 +17,17 @@ use Boxberry\Common\AbstractDelivery;
 
 class Delivery extends AbstractDelivery
 {
+    /**
+     * @return string
+     */
     public function getName()
     {
         return 'C2C';
     }
 
+    /**
+     * @return array
+     */
     public function getDefaultParameters()
     {
         return [
@@ -30,11 +36,19 @@ class Delivery extends AbstractDelivery
         ];
     }
 
+    /**
+     * @param $token
+     * @return mixed
+     */
     public function setToken($token)
     {
         return $this->setParameter('token', $token);
     }
 
+    /**
+     * @param $token
+     * @return mixed
+     */
     public function setEndPoint($token)
     {
         return $this->setParameter('endPoint', $token);
