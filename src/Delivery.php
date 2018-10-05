@@ -227,7 +227,7 @@ class Delivery extends AbstractDelivery
      *      'payer_type'    int             (Required)  Плательщик:
      *                                                      • 1, если отправитель;
      *                                                      • 2, если получатель;
-     *      'prepayd_sum'   int             (Optional)  Предоплаченная сумма в копейках
+     *      'prepaid_sum'   int             (Optional)  Предоплаченная сумма в копейках
      *      'sender'        array|Sender    (Required)  Информация об отправителе
      *      'receiver'      array|Receiver  (Required)  Данные о получателе
      *      'package'       array           (Required)  Упаковка

@@ -65,13 +65,13 @@ class NewOrderRequest extends AbstractRequest
     }
 
     /**
-     * @param int $prepaydSum Предоплаченная сумма в копейках
+     * @param int $prepaidSum Предоплаченная сумма в копейках
      *
      * @return $this
      */
-    public function setPrepaydSum($prepaydSum)
+    public function setPrepaidSum($prepaidSum)
     {
-        return $this->setParameter('prepayd_sum', $prepaydSum);
+        return $this->setParameter('prepaid_sum', $prepaidSum);
     }
 
     /**
@@ -164,7 +164,7 @@ class NewOrderRequest extends AbstractRequest
                 new Assert\Type(['type' => 'int']),
                 new Assert\Choice(['choices' => [1, 2]]),
             ]),
-            'prepayd_sum'   => new Assert\Optional([
+            'prepaid_sum'   => new Assert\Optional([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'int']),
             ]),
