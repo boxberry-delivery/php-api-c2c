@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Request;
 
 use Boxberry\C2C\Message\Response\ListStatusesResponse;
@@ -10,7 +9,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Метод, позволяющий получить статусы отправления по номеру отслеживания.
  *
  * @method ListStatusesResponse send()
+ *
  * @see     ListStatusesResponse
+ *
  * @package Boxberry\C2C\Message\Request
  */
 class ListStatusesRequest extends AbstractRequest

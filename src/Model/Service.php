@@ -1,13 +1,12 @@
 <?php
 
-
 namespace Boxberry\C2C\Model;
 
 use Boxberry\Common\Model\AbstractModel;
 use Boxberry\Common\Model\CreateFromAttributesTrait;
 
 /**
- * Сервис (доп. услуга)
+ * Сервис (доп. услуга).
  *
  * @package Boxberry\Common\Models
  */

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Request;
 
 use Boxberry\C2C\Message\Response\NewOrderResponse;
@@ -15,7 +14,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Метод, позволяющий создать новый заказ.
  *
  * @method NewOrderResponse send()
+ *
  * @see     NewOrderResponse
+ *
  * @package Boxberry\C2C\Message\Request
  */
 class NewOrderRequest extends AbstractRequest
@@ -29,11 +30,11 @@ class NewOrderRequest extends AbstractRequest
     }
 
     /**
-     * @param int $deliveryType     Тип доставки, возможные значения:
-     *                              • 1, если доставка от двери до двери;
-     *                              • 2, если доставка от двери до отделения;
-     *                              • 3, если заставка от отделения до двери;
-     *                              • 4, если доставка от отделения до отделения.
+     * @param int $deliveryType �ип доставки, возможные значения:
+     *                          • 1, если доставка от двери до двери;
+     *                          • 2, если доставка от двери до отделения;
+     *                          • 3, если заставка от отделения до двери;
+     *                          • 4, если доставка от отделения до отделения
      *
      * @return $this
      */
@@ -53,9 +54,9 @@ class NewOrderRequest extends AbstractRequest
     }
 
     /**
-     * @param int $payerType    Плательщик:
-     *                          • 1, если отправитель;
-     *                          • 2, если получатель;
+     * @param int $payerType Плательщик:
+     *                       • 1, если отправитель;
+     *                       • 2, если получатель;
      *
      * @return $this
      */
@@ -82,10 +83,10 @@ class NewOrderRequest extends AbstractRequest
     public function setSender($sender)
     {
         if (is_object($sender)) {
-            $sender = Helper::filterEmpty((array)$sender);
+            $sender = Helper::filterEmpty((array) $sender);
         }
 
-        return $this->setParameter('sender', (array)$sender);
+        return $this->setParameter('sender', (array) $sender);
     }
 
     /**
@@ -96,10 +97,10 @@ class NewOrderRequest extends AbstractRequest
     public function setReceiver($receiver)
     {
         if (is_object($receiver)) {
-            $receiver = Helper::filterEmpty((array)$receiver);
+            $receiver = Helper::filterEmpty((array) $receiver);
         }
 
-        return $this->setParameter('receiver', (array)$receiver);
+        return $this->setParameter('receiver', (array) $receiver);
     }
 
     /**
@@ -109,7 +110,7 @@ class NewOrderRequest extends AbstractRequest
      */
     public function setPackage($package)
     {
-        return $this->setParameter('package', (array)$package);
+        return $this->setParameter('package', (array) $package);
     }
 
     /**
@@ -155,28 +156,28 @@ class NewOrderRequest extends AbstractRequest
                 new Assert\Type(['type' => 'int']),
                 new Assert\Choice(['choices' => [1, 2, 3, 4]]),
             ]),
-            'public_price'  => new Assert\Required([
+            'public_price' => new Assert\Required([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'int']),
             ]),
-            'payer_type'    => new Assert\Required([
+            'payer_type' => new Assert\Required([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'int']),
                 new Assert\Choice(['choices' => [1, 2]]),
             ]),
-            'prepayd_sum'   => new Assert\Optional([
+            'prepayd_sum' => new Assert\Optional([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'int']),
             ]),
-            'sender'        => new Assert\Required([
+            'sender' => new Assert\Required([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'array']),
                 new Assert\Collection([
-                    'city'        => new Assert\Required([
+                    'city' => new Assert\Required([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'point_code'  => new Assert\Optional([
+                    'point_code' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
@@ -184,45 +185,45 @@ class NewOrderRequest extends AbstractRequest
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'document'    => new Assert\Optional([
+                    'document' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),
-                    'doc_series'  => new Assert\Optional([
+                    'doc_series' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'doc_num'     => new Assert\Optional([
+                    'doc_num' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'phone'       => new Assert\Required([
+                    'phone' => new Assert\Required([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'email'       => new Assert\Optional([
+                    'email' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'zip'         => new Assert\Optional([
+                    'zip' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'address'     => new Assert\Optional([
+                    'address' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
                 ]),
             ]),
-            'receiver'      => new Assert\Required([
+            'receiver' => new Assert\Required([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'array']),
                 new Assert\Collection([
-                    'city'        => new Assert\Required([
+                    'city' => new Assert\Required([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'point_code'  => new Assert\Optional([
+                    'point_code' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
@@ -230,25 +231,25 @@ class NewOrderRequest extends AbstractRequest
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'phone'       => new Assert\Required([
+                    'phone' => new Assert\Required([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'email'       => new Assert\Optional([
+                    'email' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'zip'         => new Assert\Optional([
+                    'zip' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'address'     => new Assert\Optional([
+                    'address' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
                 ]),
             ]),
-            'package'       => new Assert\Required([
+            'package' => new Assert\Required([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'array']),
                 new Assert\Collection([
@@ -256,29 +257,29 @@ class NewOrderRequest extends AbstractRequest
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),
-                    'package_code'     => new Assert\Optional([
+                    'package_code' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'depth'            => new Assert\Optional([
+                    'depth' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),
-                    'width'            => new Assert\Optional([
+                    'width' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),
-                    'height'           => new Assert\Optional([
+                    'height' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),
-                    'attachment_id'    => new Assert\Required([
+                    'attachment_id' => new Assert\Required([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
                 ]),
             ]),
-            'promo_code'    => new Assert\Optional([
+            'promo_code' => new Assert\Optional([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'string']),
             ]),
@@ -286,11 +287,11 @@ class NewOrderRequest extends AbstractRequest
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'array']),
             ]),
-            'safe_deal'     => new Assert\Optional([
+            'safe_deal' => new Assert\Optional([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'array']),
                 new Assert\Collection([
-                    'title'            => new Assert\Required([
+                    'title' => new Assert\Required([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
@@ -298,15 +299,15 @@ class NewOrderRequest extends AbstractRequest
                         new Assert\NotBlank(),
                         new Assert\Choice(['choices' => ['consumer', 'supplier']]),
                     ]),
-                    'payer_target'     => new Assert\Optional([
+                    'payer_target' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Choice(['choices' => ['account', 'card']]),
                     ]),
-                    'goods'            => new Assert\Optional([
+                    'goods' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'array']),
                         new Assert\Collection([
-                            'title'            => new Assert\Required([
+                            'title' => new Assert\Required([
                                 new Assert\NotBlank(),
                                 new Assert\Type(['type' => 'string']),
                             ]),
@@ -314,13 +315,13 @@ class NewOrderRequest extends AbstractRequest
                                 new Assert\NotBlank(),
                                 new Assert\Choice(['choices' => ['consumer', 'supplier']]),
                             ]),
-                            'payer_target'     => new Assert\Optional([
+                            'payer_target' => new Assert\Optional([
                                 new Assert\NotBlank(),
                                 new Assert\Choice(['choices' => ['account', 'card']]),
                             ]),
-                            'goods'            => new Assert\Optional([
+                            'goods' => new Assert\Optional([
                                 new Assert\NotBlank(),
-                                new Assert\Type(['type' => 'array']), //
+                                new Assert\Type(['type' => 'array']),
                             ]),
                         ]),
                     ]),

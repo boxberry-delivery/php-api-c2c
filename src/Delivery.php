@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C;
 
 use Boxberry\C2C\Message\Request\CalculationLapRequest;
@@ -26,7 +25,7 @@ class Delivery extends AbstractDelivery
     {
         return [
             'endPoint' => null,
-            'token'    => null,
+            'token' => null,
         ];
     }
 
@@ -60,7 +59,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(CalculationLapRequest::class, $options);
 
-        /** @var CalculationLapRequest $request */
+        /* @var CalculationLapRequest $request */
         return $request;
     }
 
@@ -79,7 +78,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(DeleteParcelsRequest::class, $options);
 
-        /** @var DeleteParcelsRequest $request */
+        /* @var DeleteParcelsRequest $request */
         return $request;
     }
 
@@ -97,7 +96,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(ListAttachmentTypesRequest::class, $options);
 
-        /** @var ListAttachmentTypesRequest $request */
+        /* @var ListAttachmentTypesRequest $request */
         return $request;
     }
 
@@ -118,7 +117,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(ListCitiesRequest::class, $options);
 
-        /** @var ListCitiesRequest $request */
+        /* @var ListCitiesRequest $request */
         return $request;
     }
 
@@ -136,7 +135,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(ListPackagesRequest::class, $options);
 
-        /** @var ListPackagesRequest $request */
+        /* @var ListPackagesRequest $request */
         return $request;
     }
 
@@ -156,7 +155,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(ListPointsRequest::class, $options);
 
-        /** @var ListPointsRequest $request */
+        /* @var ListPointsRequest $request */
         return $request;
     }
 
@@ -174,7 +173,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(ListServicesRequest::class, $options);
 
-        /** @var ListServicesRequest $request */
+        /* @var ListServicesRequest $request */
         return $request;
     }
 
@@ -193,7 +192,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(ListStatusesRequest::class, $options);
 
-        /** @var ListStatusesRequest $request */
+        /* @var ListStatusesRequest $request */
         return $request;
     }
 
@@ -202,6 +201,7 @@ class Delivery extends AbstractDelivery
      *
      * $options = [
      * ]
+     *
      * @param array $options Входные параметры (см. выше)
      *
      * @return ListZipsRequest
@@ -210,7 +210,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(ListZipsRequest::class, $options);
 
-        /** @var ListZipsRequest $request */
+        /* @var ListZipsRequest $request */
         return $request;
     }
 
@@ -244,7 +244,7 @@ class Delivery extends AbstractDelivery
     {
         $request = $this->createRequest(NewOrderRequest::class, $options);
 
-        /** @var NewOrderRequest $request */
+        /* @var NewOrderRequest $request */
         return $request;
     }
 }

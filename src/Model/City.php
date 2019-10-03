@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Model;
 
 use Boxberry\C2C\Message\Request\ListCitiesRequest;
@@ -8,7 +7,7 @@ use Boxberry\Common\Model\AbstractModel;
 use Boxberry\Common\Model\CreateFromAttributesTrait;
 
 /**
- * Город
+ * Город.
  *
  * @package Boxberry\Common\Models
  */
@@ -18,6 +17,7 @@ class City extends AbstractModel
 
     /**
      * @see ListCitiesRequest
+     *
      * @var string Уникальный идентификатор (код) города в базе данных ИС Boxberry
      */
     public $code;
@@ -33,8 +33,6 @@ class City extends AbstractModel
     public $lap_receive;
 
     /**
-     *
-     *
      * @var bool Принимает значение 1 – если в городе доступна выдача писем и посылок, иначе – 0
      */
     public $lap_take;

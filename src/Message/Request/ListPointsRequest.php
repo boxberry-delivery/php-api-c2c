@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Request;
 
 use Boxberry\C2C\Message\Response\ListPointsResponse;
@@ -10,7 +9,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Метод, позволяющий получить список ПВЗ.
  *
  * @method ListPointsResponse send()
+ *
  * @see     ListPointsResponse
+ *
  * @package Boxberry\C2C\Message\Request
  */
 class ListPointsRequest extends AbstractRequest
@@ -34,9 +35,9 @@ class ListPointsRequest extends AbstractRequest
     }
 
     /**
-     * @param string $city  Код города в ИС Boxberry
-     *                      Указывается если есть необходимость наложить фильтр по
-     *                      городу, иначе возвращаются отделения во всех городах.
+     * @param string $city �од города в ИС Boxberry
+     *                     Указывается если есть необходимость наложить фильтр по
+     *                     городу, иначе возвращаются отделения во всех городах
      *
      * @return $this
      */
@@ -57,7 +58,7 @@ class ListPointsRequest extends AbstractRequest
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'bool']),
             ]),
-            'city'    => new Assert\Optional([
+            'city' => new Assert\Optional([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'string']),
             ]),

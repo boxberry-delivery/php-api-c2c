@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Request;
 
 use Boxberry\C2C\Message\Response\ListCitiesResponse;
@@ -10,7 +9,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Метод позволяет получить список городов, в которых есть пункты выдачи заказов Boxberry.
  *
  * @method ListCitiesResponse send()
+ *
  * @see     ListCitiesResponse
+ *
  * @package Boxberry\C2C\Message\Request
  */
 class ListCitiesRequest extends AbstractRequest
@@ -61,11 +62,11 @@ class ListCitiesRequest extends AbstractRequest
         $baseRules = parent::getValidationRules();
 
         $rules = [
-            'lap_receive'  => new Assert\Optional([
+            'lap_receive' => new Assert\Optional([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'bool']),
             ]),
-            'lap_take'     => new Assert\Optional([
+            'lap_take' => new Assert\Optional([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'bool']),
             ]),

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Request;
 
 use Boxberry\C2C\Message\Response\CalculationLapResponse;
@@ -11,7 +10,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Метод позволяет рассчитать стоимость доставки ПиП.
  *
  * @method CalculationLapResponse send()
+ *
  * @see     CalculationLapResponse
+ *
  * @package Boxberry\C2C\Message\Request
  */
 class CalculationLapRequest extends AbstractRequest
@@ -71,7 +72,7 @@ class CalculationLapRequest extends AbstractRequest
      */
     public function setPackage($package)
     {
-        return $this->setParameter('package', (array)$package);
+        return $this->setParameter('package', (array) $package);
     }
 
     /**
@@ -81,7 +82,7 @@ class CalculationLapRequest extends AbstractRequest
      */
     public function setListServices($listServices)
     {
-        return $this->setParameter('list_services', (array)$listServices);
+        return $this->setParameter('list_services', (array) $listServices);
     }
 
     /**
@@ -92,7 +93,7 @@ class CalculationLapRequest extends AbstractRequest
         $baseRules = parent::getValidationRules();
 
         $rules = [
-            'sender_city'   => new Assert\Required([
+            'sender_city' => new Assert\Required([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'string']),
             ]),
@@ -100,15 +101,15 @@ class CalculationLapRequest extends AbstractRequest
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'string']),
             ]),
-            'public_price'  => new Assert\Required([
+            'public_price' => new Assert\Required([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'int']),
             ]),
-            'promo_code'    => new Assert\Optional([
+            'promo_code' => new Assert\Optional([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'string']),
             ]),
-            'package'       => new Assert\Required([
+            'package' => new Assert\Required([
                 new Assert\NotBlank(),
                 new Assert\Type(['type' => 'array']),
                 new Assert\Collection([
@@ -116,19 +117,19 @@ class CalculationLapRequest extends AbstractRequest
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),
-                    'package_code'     => new Assert\Optional([
+                    'package_code' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'string']),
                     ]),
-                    'depth'            => new Assert\Optional([
+                    'depth' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),
-                    'width'            => new Assert\Optional([
+                    'width' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),
-                    'height'           => new Assert\Optional([
+                    'height' => new Assert\Optional([
                         new Assert\NotBlank(),
                         new Assert\Type(['type' => 'int']),
                     ]),

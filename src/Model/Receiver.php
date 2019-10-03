@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Model;
 
 use Boxberry\Common\Model\AbstractModel;
@@ -13,6 +12,7 @@ class Receiver extends AbstractModel
     /**
      * @see City
      * @see ListCitiesRequest
+     *
      * @var string Код города
      */
     public $city;
@@ -20,6 +20,7 @@ class Receiver extends AbstractModel
     /**
      * @see Point
      * @see ListPointsRequest
+     *
      * @var string Идентификатор отделения
      */
     public $point_code;
@@ -42,6 +43,7 @@ class Receiver extends AbstractModel
     /**
      * @see Zip
      * @see ListZipsRequest
+     *
      * @var string Индекс отправителя
      */
     public $zip;

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Request;
 
 use Boxberry\Common\Message\Request\AbstractRequest as BaseAbstractRequest;
@@ -8,7 +7,7 @@ use Boxberry\Common\Message\Request\AbstractRequest as BaseAbstractRequest;
 abstract class AbstractRequest extends BaseAbstractRequest
 {
     /**
-     * Возвращает содержимое запроса
+     * Возвращает содержимое запроса.
      *
      * @return array|mixed
      */
