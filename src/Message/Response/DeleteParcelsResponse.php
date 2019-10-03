@@ -1,15 +1,15 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Response;
 
 use Boxberry\C2C\Message\Request\DeleteParcelsRequest;
 use Boxberry\Common\Exception\RuntimeException;
 
 /**
- * Class DeleteParcelsResponse
+ * Class DeleteParcelsResponse.
  *
  * @see     DeleteParcelsRequest
+ *
  * @package Boxberry\C2C\Message\Response
  */
 class DeleteParcelsResponse extends AbstractResponse
@@ -17,7 +17,6 @@ class DeleteParcelsResponse extends AbstractResponse
     /**
      * @inheritdoc
      *
-     * @return void
      * @throws \Boxberry\Common\Exception\RuntimeException
      * @throws RuntimeException
      */
@@ -29,7 +28,6 @@ class DeleteParcelsResponse extends AbstractResponse
     /**
      * @inheritdoc
      *
-     * @return void
      * @throws \Boxberry\Common\Exception\RuntimeException
      * @throws RuntimeException
      */

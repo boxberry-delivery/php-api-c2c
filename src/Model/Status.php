@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Model;
 
 use Boxberry\Common\Exception\RuntimeException;
@@ -26,7 +25,6 @@ class Status extends AbstractModel
     /**
      * @inheritdoc
      *
-     * @return void
      * @throws \Boxberry\Common\Exception\RuntimeException
      * @throws RuntimeException
      */

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Response;
 
 use Boxberry\Common\Message\Response\AbstractResponse as BaseAbstractResponse;

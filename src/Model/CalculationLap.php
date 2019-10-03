@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Model;
 
 use Boxberry\C2C\Message\Request\CalculationLapRequest;
@@ -11,6 +10,7 @@ use Boxberry\Common\Model\AbstractModel;
  * Рассчет стоимости доставки ПиП.
  *
  * @see     CalculationLapRequest
+ *
  * @package Boxberry\C2C\Model
  */
 class CalculationLap extends AbstractModel
@@ -27,17 +27,16 @@ class CalculationLap extends AbstractModel
 
     /**
      * @var int Тип доставки:
-     *      1 – от двери до двери
-     *      2 – от двери до отделения
-     *      3 – от отделения до двери
-     *      4 – от отделения до отделения
+     *          1 – от двери до двери
+     *          2 – от двери до отделения
+     *          3 – от отделения до двери
+     *          4 – от отделения до отделения
      */
     public $delivery_type;
 
     /**
      * @inheritdoc
      *
-     * @return void
      * @throws \Boxberry\Common\Exception\RuntimeException
      */
     public static function createFromAttributes(array $attributes)

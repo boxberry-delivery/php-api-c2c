@@ -34,5 +34,8 @@
     "psr-4": {
       "Boxberry\\C2C\\": "src"
     }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.15"
   }
 }

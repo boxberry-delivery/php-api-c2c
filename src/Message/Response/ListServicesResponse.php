@@ -1,15 +1,15 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Response;
 
 use Boxberry\C2C\Message\Request\ListServicesRequest;
 use Boxberry\C2C\Model\Service;
 
 /**
- * Class ListServicesResponse
+ * Class ListServicesResponse.
  *
  * @see     ListServicesRequest
+ *
  * @package Boxberry\C2C\Message\Response
  */
 class ListServicesResponse extends AbstractResponse

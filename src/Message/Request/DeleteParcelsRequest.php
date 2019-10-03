@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Request;
 
 use Boxberry\C2C\Message\Response\DeleteParcelsResponse;
@@ -10,7 +9,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Метод позволяет удалить посылки с указанными номерами накладных.
  *
  * @method DeleteParcelsResponse send()
+ *
  * @see     DeleteParcelsResponse
+ *
  * @package Boxberry\C2C\Message\Request
  */
 class DeleteParcelsRequest extends AbstractRequest

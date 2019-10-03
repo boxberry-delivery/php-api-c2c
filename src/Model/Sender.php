@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Model;
 
 use Boxberry\C2C\Message\Request\ListCitiesRequest;
@@ -16,6 +15,7 @@ class Sender extends AbstractModel
     /**
      * @see City
      * @see ListCitiesRequest
+     *
      * @var string Код города
      */
     public $city;
@@ -23,6 +23,7 @@ class Sender extends AbstractModel
     /**
      * @see Point
      * @see ListPointsRequest
+     *
      * @var string Идентификатор отделения
      */
     public $point_code;
@@ -33,11 +34,11 @@ class Sender extends AbstractModel
     public $client_name;
 
     /**
-     * @var int Тип документа:
-     *      • 1, если паспорт РФ;
-     *      • 2, если паспорт иностранного гражданина;
-     *      • 3, военный билет;
-     *      • 4, Загранпаспорт.
+     * @var int �ип документа:
+     *          • 1, если паспорт РФ;
+     *          • 2, если паспорт иностранного гражданина;
+     *          • 3, военный билет;
+     *          • 4, Загранпаспорт
      */
     public $document;
 
@@ -64,6 +65,7 @@ class Sender extends AbstractModel
     /**
      * @see Zip
      * @see ListZipsRequest
+     *
      * @var string Индекс отправителя
      */
     public $zip;

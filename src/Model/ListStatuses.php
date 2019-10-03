@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Boxberry\C2C\Model;
 
 use Boxberry\Common\Model\AbstractModel;
@@ -26,7 +25,7 @@ class ListStatuses extends AbstractModel
     public $history;
 
     /**
-     * Устанавливает историю статусов их массива
+     * Устанавливает историю статусов их массива.
      *
      * @param array $history
      *

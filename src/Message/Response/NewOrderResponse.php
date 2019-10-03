@@ -1,14 +1,14 @@
 <?php
 
-
 namespace Boxberry\C2C\Message\Response;
 
 use Boxberry\Common\Exception\RuntimeException;
 
 /**
- * Class NewOrderResponse
+ * Class NewOrderResponse.
  *
  * @see     NewOrderResponse
+ *
  * @package Boxberry\C2C\Message\Response
  */
 class NewOrderResponse extends AbstractResponse
@@ -17,6 +17,7 @@ class NewOrderResponse extends AbstractResponse
      * @inheritdoc
      *
      * @return bool
+     *
      * @throws \Boxberry\Common\Exception\RuntimeException
      * @throws RuntimeException
      */
